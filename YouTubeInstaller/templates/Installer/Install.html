@@ -1,0 +1,42 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>YouTube Installer</title>
+    <link rel="stylesheet" href="{% static 'Installer/css/main.css' %}">
+</head>
+<body>
+    <header>
+        <div class="header_div">
+            <div>
+                <p>
+                    YouTube video installation
+                </p> 
+            </div>
+        </div>
+    </header>
+    <section>
+        <div class="container">
+            <div class="video">
+                <iframe width="520" height="300" src="https://www.youtube.com/embed/ofeW7g7Ljmc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+        </div>
+        <div class="buttons_container">
+            <div class="back_button">
+                <a href="{% url 'home' %}"><button type="submit">Back</button></a>
+            </div>
+            <div class="install_button">
+                <button type="submit">Install</button>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div>
+            <p>©All rights reserved by me)</p>
+        </div>
+    </footer>
+</body>
+</html>

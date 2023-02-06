@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>YouTube Installer</title>
+    <link rel="stylesheet" href="{% static 'Installer/css/main.css' %}">
+</head>
+<body>
+    <header>
+        <div class="header_div">
+            <div>
+                <p>
+                    YouTube video installation
+                </p> 
+            </div>
+        </div>
+    </header>
+    <section>
+<!--        <form>-->
+<!--            <div class="input_link">-->
+<!--                <div class="input_link_input">-->
+<!--                    <input type="text" name="link" placeholder="Enter video link" required>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            <div class="btn">-->
+<!--                <div class="btn2">-->
+<!--                    <a href="{% url 'installer' %}"><button type="submit">Find</button></a>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </form>-->
+        <div class="input_link">
+                <div class="input_link_input">
+                    <input type="text" name="link" placeholder="Enter video link" required>
+                </div>
+            </div>
+            <div class="btn">
+                <div class="btn2">
+                    <a href="{% url 'installer' %}"><button type="submit">Find</button></a>
+                </div>
+            </div>
+    </section>
+    <footer>
+        <div>
+            <p>©All rights reserved by me)</p>
+        </div>
+    </footer>
+</body>
+</html>
